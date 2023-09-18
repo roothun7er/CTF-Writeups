@@ -33,13 +33,16 @@ sonic-visualiser combined.wav
 
 
 Add an Spectrogram to your Projekt
+[<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/ressources/Pasted image 20230918191414.png' alt='MCSA' height='120'>](https://github.com/hun7erCybersecurity)
 ![[Pasted image 20230918191414.png]]
 * After you change the spectrum and analyze your file you will find anomalies on the Timestamp 2:19 min
 
 Anomalies:
+[<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/ressources/Pasted image 20230918191906.png' alt='MCSA' height='120'>](https://github.com/hun7erCybersecurity)
 ![[Pasted image 20230918191906.png]]
 * if you look closer and zoom in you will see an pattern.
 
+[<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/ressources/Pasted image 20230918192109.png' alt='MCSA' height='120'>](https://github.com/hun7erCybersecurity)
 ![[Pasted image 20230918192109.png]]
 * it looks like Morsecode
 ---
@@ -51,11 +54,14 @@ https://cyberchef.org/
 ```
 
 Setting up Cyberchef:
+[<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/ressources/Pasted image 20230918192632.png' alt='MCSA' height='120'>](https://github.com/hun7erCybersecurity)
 ![[Pasted image 20230918192632.png]]
 + Type `morse` in the search field and move `To Morse Code` per drag and drop to the Recipe field on the right side
 
 Solve the challenge:
+[<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/ressources/Pasted image 20230918192109.png' alt='MCSA' height='120'>](https://github.com/hun7erCybersecurity)
 ![[Pasted image 20230918192109.png]]
+[<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/ressources/Pasted image 20230918193136.png' alt='MCSA' height='120'>](https://github.com/hun7erCybersecurity)
 ![[Pasted image 20230918193136.png]]
 Legende: short = `.`, long = `-`
 
