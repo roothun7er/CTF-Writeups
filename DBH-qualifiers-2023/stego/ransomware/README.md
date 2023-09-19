@@ -5,6 +5,7 @@
 ---
 
 ## Instructions
+<br />
 
 ```
 Die Developer Akademie wurde am 17.06.2023 während eines Kundeneventsvon der mittlerweile
@@ -17,8 +18,10 @@ ransomware.py 8b3b5dcb2f4e4ab83600f8d27ad907e3cdc53246c589dfa197c587f80e73fc9f
 flag.png.encrypted 5dbab4261f97694fb6d3a018a7ef4383712b614484965cfd58f247fe33b5433e
 ```
 
+
 * Download this `ransomware.py`, `flag.png.encrypted` files
 ---
+<br />
 
 ## Starting investigating
 
@@ -61,14 +64,14 @@ if __name__ == "__main__":
             dwnld("https://raw.githubusercontent.com/florian-dalwigk/duck/main/mandarin.png"))))
 ```
 ---
+<br />
 
 ## Analyzing behavior
-
 
 * at the first view of the function `main` we see the previous code goes to a github Repository and tries to download a picture `mandarin.png` 
 
 * If we run `ransomware.py` and there is no `flag.png` in the `current working directory`, we expect an error.
-
+<br />
 
 Create an `flag.png` file with the following command:
 ```bash
@@ -91,12 +94,12 @@ ls -la
   
 * How can we decrypt our data let's investigate it
 ---
+<br />
 
 ## Investigation of the code
 
 
 * first question: What kind of encryption technique does `ransomware.py` use?
-
 
 Let's look at the following function:
 ```python
@@ -121,8 +124,7 @@ def extract(img):
 * What kind of technique does the function use? With our information the given function use a LSB(Last Significant Bit) technique but is this necessary for us
 
 * let's print out the `result` variable
-
-
+<br />
   
 Add a print function and run the `ransomware.py` file:
 ```python
@@ -157,9 +159,10 @@ gICAgYyA9ICIiDQogICAgZm9yIGNoYXIgaW4gbToNCiAgICAgICAgaWYgY2hhciBpbiBhOg0KICAgICA
 9zID0gYS5pbmRleChjaGFyKQ0KICAgICAgICAgICAgY19wb3MgPSAocG9zICsgaykgJSBsZ
 ```
 
-* hooooly what is this, let'z look at Cyberchef if there are something interesting in it encoded
+* hooooly what is this, let's look at Cyberchef if there are something interesting in it encoded
 
 ---
+<br />
 
 ## Cyberchef
 
@@ -170,15 +173,16 @@ https://cyberchef.org/
 ```
 
 Setting up Cyberchef:
-[<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/ransomware/ressources/Pasted image 20230919002241.png' alt='MCSA'>](https://github.com/hun7erCybersecurity)
+<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/ransomware/ressources/Pasted image 20230919002241.png' alt='Setting up Cyberchef'>
 + Type `base64` in the search field and move `from Base64` per drag and drop to the Recipe field on the right side 
  
 Put the junk output in the Cyberchef input field like the following:
-[<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/ransomware/ressources/Pasted image 20230919002553.png' alt='MCSA'>](https://github.com/hun7erCybersecurity)
+<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/ransomware/ressources/Pasted image 20230919002553.png' alt='Put the junk output in the Cyberchef input field'>
 
 
 * After you have it done right, you saw another python code.
 ---
+<br />
 
 ## Investigate this code
 
@@ -214,17 +218,17 @@ if __name__ == "__main__":
 
 * It is a rotation(ROT) encryption like Caesar used in his time. 
 ---
+<br />
 
 ## Solve the Challenge
-
 
 * let's create a decryption script
 
 * If we look closer we see that `encrypt.py` uses the function `randint()` with the value `63`, which means that we need this iteration also in our script
-  
+<br />
 
 
-The following code `solve.py` decrypts the "flag.png.encrypted" file 64 times:
+The following code `solve.py` decrypts the `flag.png.encrypted` file 64 times:
 ```python
 import os
 import base64
@@ -279,15 +283,16 @@ if __name__ == "__main__":
 * After that, many files were decrypted, but only one of them is a real image.
 
 ---
+<br />
 
 Theeeeeere weeeeee gooooooo we solved the Challenge:
-[<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/ransomware/ressources/Pasted image 20230919004211.png' alt='MCSA'>](https://github.com/hun7erCybersecurity)
+<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/ransomware/ressources/Pasted image 20230919004211.png' alt='Flag Image'>
 
 ---
+<br />
 
 ## The flag
 
 ```txt
 DBH{R4ns0mwar3_DEcrypt3d!}
 ```
-
