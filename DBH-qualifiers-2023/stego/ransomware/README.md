@@ -112,13 +112,13 @@ def extract(img):
     return result[:result.index('#')]
 ```
 
-* At first view we see "b, g, r = img[x, y]" but the interesting part are the letters of these 3 variables "b", "g" and "r" (hmm)
+* At first view we see `b, g, r = img[x, y]` but the interesting part are the letters of these 3 variables `b`, `g` and `r` (hmm)
 
 * let's reverse it and remove the commas and now we had `rgb` 
 
 * Well, now we have one piece of the puzzle
 
-* What kind of technique does the function use? With our information the given function use a LSB (Last Significant Bit) technique but is this necessary for us
+* What kind of technique does the function use? With our information the given function use a LSB(Last Significant Bit) technique but is this necessary for us
 
 * let's print out the `result` variable
 
@@ -224,7 +224,7 @@ if __name__ == "__main__":
   
 
 
-The following code decrypts the "flag.png.encrypted" file 64 times:
+The following code `solve.py` decrypts the "flag.png.encrypted" file 64 times:
 ```python
 import os
 import base64
