@@ -8,15 +8,14 @@ I will try to create as many `solves` writeup's as possible.
 ---
 
 ### Writeup upload status:
-
-| $${\color{#6b6867}categories}$$ | $${\color{#6b6867}name}$$ | $${\color{#6b6867}name}$$ | $${\color{#6b6867}name}$$ | $${\color{#6b6867}name}$$ | $${\color{#6b6867}my-solves}$$ |
+| $\text{\color{#553394}{categories}}$ | $\text{\color{#553394}{name}}$ | $\text{\color{#553394}{name}}$ | $\text{\color{#553394}{name}}$ | $\text{\color{#553394}{name}}$ | $\text{\color{green}{my solves}}$ |
 | -------- | -------- | -------- | -------- | -------- | -------- |
-| $${\color{#516ea3}rev}$$ | $${\color{#822829}hashpump}$$ | $${\color{#822829}FeO}$$ | $${\color{#822829}abenteuerinsel-1}$$ | $${\color{white}}$$ | $${\color{white}2/3}$$ |
-| $${\color{#516ea3}misc}$$ | $${\color{#822829}kingdomof1337}$$ | $${\color{#822829}insane}$$ | $${\color{#822829}abenteuerinsel-2}$$ | $${\color{#822829}java-judge}$$ | $${\color{white}4/4}$$ |
-| $${\color{#516ea3}pwn}$$ | $${\color{#822829}heapit}$$ | $${\color{white}}$$ | $${\color{white}}$$ | $${\color{white}}$$ | $${\color{white}1/1}$$ |
-| $${\color{#516ea3}crypto}$$ | $${\color{#822829}tastaturlayouts}$$ | $${\color{#822829}securelogin}$$ | $${\color{white}}$$ | $${\color{white}}$$ | $${\color{white}2/2}$$ |
-| $${\color{#516ea3}stego}$$ |  $${\color{green}audio}$$ | $${\color{green}ransomware}$$ | $${\color{white}}$$ | $${\color{white}}$$ | $${\color{white}2/2}$$ |
-| $${\color{#516ea3}forensic}$$ | $${\color{#822829}typelog}$$ | $${\color{#822829}}$$ | $${\color{white}}$$ | $${\color{white}}$$ | $${\color{white}1/1}$$ |
-| $${\color{#516ea3}web}$$ | $${\color{#822829}fotoshop}$$ | $${\color{#822829}comparison}$$ | $${\color{#822829}montystresor}$$ | $${\color{#822829}dbh-notes}$$ | $${\color{white}4/4}$$ |
-| $${\color{#516ea3}windows}$$ | $${\color{#822829}icar}$$ | $${\color{white}}$$ | $${\color{white}}$$ | $${\color{white}}$$ | $${\color{white}1/1}$$ |
-| $${\color{#516ea3}vuln}$$ | $${\color{#822829}keypass}$$ | $${\color{white}}$$ | $${\color{white}}$$ | $${\color{white}}$$ | $${\color{white}1/1}$$ |
+| $\text{\color{#6b6867}{rev}}$ | $\text{\color{#742525}{hashpump}}$ | $\text{\color{#742525}{FeO}}$ | $\text{\color{#742525}{abenteuerinsel-1}}$ | $\text{\color{#742525}{}}$ | $\text{\color{green}{2} \ \color{#6b6867}{/}\ \color{#6b6867}{3}}$ |
+| $\text{\color{#6b6867}{misc}}$ | $\text{\color{#742525}{kingdomof1337}}$ | $\text{\color{#742525}{insane}}$ | $\text{\color{#742525}{abenteuerinsel-2}}$ | $\text{\color{#742525}{java-judge}}$ | $\text{\color{green}{4} \ \color{#6b6867}{/}\ \color{#6b6867}{4}}$ |
+| $\text{\color{#6b6867}{pwn}}$ | $\text{\color{#742525}{heapit}}$ | $\text{\color{#742525}{}}$ | $\text{\color{#742525}{}}$ | $\text{\color{#742525}{}}$ | $\text{\color{green}{1} \ \color{#6b6867}{/}\ \color{#6b6867}{1}}$ |
+| $\text{\color{#6b6867}{crypto}}$ | $\text{\color{#742525}{tastaturlayouts}}$ | $\text{\color{#742525}{securelogin}}$ | $\text{\color{#742525}{}}$ | $\text{\color{#742525}{}}$ | $\text{\color{green}{2} \ \color{#6b6867}{/}\ \color{#6b6867}{2}}$ |
+| $\text{\color{#6b6867}{stego}}$ |  [audio](https://github.com/hun7erCybersecurity/CTF-Writeups/tree/main/DBH-qualifiers-2023/stego/audio) | [ransomware](https://github.com/hun7erCybersecurity/CTF-Writeups/tree/main/DBH-qualifiers-2023/stego/ransomware) | $\text{\color{#742525}{}}$ | $\text{\color{#742525}{}}$ | $\text{\color{green}{2} \ \color{#6b6867}{/}\ \color{#6b6867}{2}}$ |
+| $\text{\color{#6b6867}{forensic}}$ | $\text{\color{#742525}{typelog}}$ | $\text{\color{#742525}{}}$ | $\text{\color{#742525}{}}$ | $\text{\color{#742525}{}}$ | $\text{\color{green}{1} \ \color{#6b6867}{/}\ \color{#6b6867}{1}}$ |
+| $\text{\color{#6b6867}{web}}$ | $\text{\color{#742525}{fotoshop}}$ | $\text{\color{#742525}{comparison}}$ | $\text{\color{#742525}{montystresor}}$ | $\text{\color{#742525}{dbh-notes}}$ | $\text{\color{green}{4} \ \color{#6b6867}{/}\ \color{#6b6867}{4}}$ |
+| $\text{\color{#6b6867}{windows}}$ | $\text{\color{#742525}{icar}}$ | $\text{\color{#742525}{}}$ | $\text{\color{#742525}{}}$ | $\text{\color{#742525}{}}$ | $\text{\color{green}{1} \ \color{#6b6867}{/}\ \color{#6b6867}{1}}$ |
+| $\text{\color{#6b6867}{vuln}}$ | $\text{\color{#742525}{keepass}}$ | $\text{\color{#742525}{}}$ | $\text{\color{#742525}{}}$ | $\text{\color{#742525}{}}$ | $\text{\color{green}{1} \ \color{#6b6867}{/}\ \color{#6b6867}{1}}$ |
