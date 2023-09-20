@@ -58,8 +58,8 @@ Anomalies:
 
 <img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918192109.png' alt='Anomalies Zoomed'>
 * it looks like Morsecode
----
 
+---
 <br />
 
 ## Cyberchef
