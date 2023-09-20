@@ -46,16 +46,16 @@ sonic-visualiser combined.wav
 
 
 Add an Spectrogram to your Projekt
-[<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918191414.png' alt='Add an Spectrogram'>]
+<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918191414.png' alt='Add an Spectrogram'>
 * After you change the spectrum and analyze your file you will find anomalies on the Timestamp 2:19 min
 
 <br />
 
 Anomalies:
-[<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918191906.png' alt='Anomalies'>]
+<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918191906.png' alt='Anomalies'>
 * if you look closer and zoom in you will see an pattern.
 
-[<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918192109.png' alt='Anomalies Zoomed'>]
+<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918192109.png' alt='Anomalies Zoomed'>
 * it looks like Morsecode
 ---
 <br />
@@ -68,12 +68,12 @@ https://cyberchef.org/
 ```
 
 Setting up Cyberchef:
-[<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918192632.png' alt='Setting up Cyberchef'>]
+<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918192632.png' alt='Setting up Cyberchef'>
 + Type `morse` in the search field and move `To Morse Code` per drag and drop to the Recipe field on the right side
 
 Solve the challenge:
-[<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918192109.png' alt='Solve the challenge1'>]
-[<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918193136.png' alt='Solve the challenge2'>]
+<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918192109.png' alt='Solve the challenge1'>
+<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918193136.png' alt='Solve the challenge2'>
 Legende: short = `.`, long = `-`
 
 * Solve the Challenge by following the sort an long periods in the green Spectrogram and type it in the Cyberchef input field with the `short` and `long` 
