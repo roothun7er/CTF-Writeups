@@ -52,6 +52,7 @@ Add an Spectrogram to your Projekt
 <br />
 
 Anomalies:
+
 <img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918191906.png' alt='Anomalies'>
 * if you look closer and zoom in you will see an pattern.
 
