@@ -173,11 +173,11 @@ https://cyberchef.org/
 ```
 
 Setting up Cyberchef:
-<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/ransomware/ressources/Pasted image 20230919002241.png' alt='Setting up Cyberchef'>
+<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/ransomware/img/Pasted image 20230919002241.png' alt='Setting up Cyberchef'>
 + Type `base64` in the search field and move `from Base64` per drag and drop to the Recipe field on the right side 
  
 Put the junk output in the Cyberchef input field like the following:
-<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/ransomware/ressources/Pasted image 20230919002553.png' alt='Put the junk output in the Cyberchef input field'>
+<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/ransomware/img/Pasted image 20230919002553.png' alt='Put the junk output in the Cyberchef input field'>
 
 
 * After you have it done right, you saw another python code.
@@ -286,7 +286,7 @@ if __name__ == "__main__":
 <br />
 
 Theeeeeere weeeeee gooooooo we solved the Challenge:
-<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/ransomware/ressources/Pasted image 20230919004211.png' alt='Flag Image'>
+<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/ransomware/img/Pasted image 20230919004211.png' alt='Flag Image'>
 
 ---
 <br />
