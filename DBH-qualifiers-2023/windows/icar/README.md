@@ -1,0 +1,153 @@
+#DBH #deutschlandsbesterhacker #challanges #cybersecurity 
+
+---
+> hun7er Cybersecurity | Sep 23th, 2023
+---
+<br />
+
+## Instructions
+
+
+```
+iCar ist ein experimentelles Anti-Virus Produkt der Firma DBHLabs.
+Diese Beta-Version kann Testviren erkennen und versucht, diese zu analysieren. 
+Damit die Beta-Version nicht "die Runde macht", wird geprüft, 
+ob die Beta-Version auf einem Computer der DBHLabs läuft. 
+Die Beta-Version kann von anderen Anti-Virus-Lösungen als Virus eingestuft werden, 
+ist jedoch absolut ungefährlich.
+
+Dateien: 52b6ab638a80326ef64504506fa51f868a14 9bff1bc01a0b4fdfd7039caa281b iCar.exe
+```
+
+
+---
+<br />
+
+## Setup Windows 10/11 requirements
+
+
+Before we get started, there are a few things we need to do.
+
+* start a Windows 10/11 virtual machine in your preffered virtualization tool.
+
+* open `powershell` as `administrator`
+
+
+Add `icar.exe` and `eicar.txt` as an exception rule to Windows Defender:
+```powershell
+Add-MpPreference -ExclusionPath "$env:USERPROFILE\Downloads\iCar.exe"
+Add-MpPreference -ExclusionPath "$env:USERPROFILE\Downloads\eicar.txt"
+```
+* nice, now we have set the exception path to the specific files
+
+
+<br />
+
+Check if the exception rules have been executed correctly with the following command:
+```powershell
+Get-MpPreference | Select-Object -ExpandProperty ExclusionPath
+```
+* if everything is correct we have set up the Windows environment to perform the last step in this section for now.
+
+* now we can download the file `iCar.exe` to the built-in `Downloads` folder without a Windows defender winning
+
+---
+<br />
+
+## Analysis of the program behavior
+
+<br />
+
+Navigate to your `Download` folder using the following command:
+```powershell
+cd $env:USERPROFILE\Downloads
+```
+<br />
+
+Open the "icar.exe" file in Powershell with the following command:
+```powershell
+.\icar.exe
+```
+
+After starting "iCar.exe" you will see the following:
+<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/windows/icar/img/iCar_Start.png' alt='iCar_Start'>
+
+* after launching the `iCar.exe` program we see in the text that the test virus `eicar.txt` must be located in the same directory.
+
+* oh didn't we forget something? 
+
+* we have the wrong `hostname` if you remember the instructions the computer must have an internal name that includes `DBHLabs`.
+
+* let's do this first
+<br />
+
+Set Computername whitch includes `DBHLabs` and restart the machine with the following command:
+```powersell
+Rename-Computer -NewName "DBHLabs-1337" -Restart
+```
+* after the execution of the command the computer will be restarted automatically
+---
+<br />
+
+## Test Virus Eicar
+
+* after the computer is restarted we need to take care of the test virus mentioned above
+
+* a simple `duckduckgo` search with `icar vi` is enough for the autocomplete to suggest `eicar virus` 
+
+* let's look what we have
+
+<br />
+
+Open the following Hompage in your preffered browser:
+```https
+https://www.eicar.org/download-anti-malware-testfile/
+```
+* nice let's try it out it sounds right and plausible
+
+* we have to create a file `eicar.txt`
+
+<br />
+
+Add a file `eicar.txt` containing the payload of the previous web page into the folder `downloads` with the following command:
+```powershell
+New-Item -ItemType File -Path "$env:USERPROFILE\Downloads\eicar.txt" -Value "X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*"
+```
+---
+<br />
+
+## Solve the challenge
+
+* open `Powershell` as `Administrator`
+
+Navigate to your `Downloads` folder with the following command:
+```powershell
+cd $env:USERPROFILE\Downloads
+```
+* after we have opened the Powershell we check if both files are present in the folder
+
+* if both files are there we can start the program `iCar.exe`
+
+<br />
+
+Open the file `icar.exe` in powershell with the following command:
+```powershell
+.\icar.exe
+```
+
+After the programstart you should see an text like in the following picture:
+<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/windows/icar/img/iCar_solve.png' alt='iCar_solve'>
+
+* if you did it right, you solved the challenge Congratulations.
+
+---
+<br />
+
+## The Flag
+
+
+The flag:
+```txt
+DBH{e1c4r_t3sTf1l3_i5t_l3g3nDe}
+```
+---
