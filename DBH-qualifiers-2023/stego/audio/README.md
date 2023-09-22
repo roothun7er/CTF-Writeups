@@ -17,7 +17,7 @@ wo mir der Kern des Liedes neue Horizonte eröffnet.
 Dateien: ca8f82c65b9cb300ee7aa575dc4c9c9244076208e 756864ae3c971f3b2c3a92d combined.wav
 ```
 
-* Download the `combined.wav` file
+* Download the file `combined.wav`
 ---
 <br />
 
@@ -33,61 +33,60 @@ sudo apt install sonic-visualiser -y
 
 ## Analyzing
 
-Open the combined.wav file in Sonic Visualizer :
+Open the file `combined.wav` in `Sonic Visualizer` with the following command:
 ```bash
 sonic-visualiser combined.wav 
 ```
 
-* If you listing to the audio you will hear no anomalies 
+* If you listen to the audio you will not hear any anomalies. 
 
-* On the first look you will see nothing interesting
+* At first look you will not see anything interesting
 
 <br />
 
-
-Add an Spectrogram to your Projekt
+Add a spectrogram to your project:
 <img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918191414.png' alt='Add an Spectrogram'>
-* After you change the spectrum and analyze your file you will find anomalies on the Timestamp 2:19 min
+* After changing the spectrum and analyzing your file, you will find anomalies at the timestamp 2:19 min.
 
 <br />
 
 Anomalies:
 
 <img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918191906.png' alt='Anomalies'>
-* if you look closer and zoom in you will see an pattern.
+* if you look closer and zoom in you can see a pattern.
 
 <img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918192109.png' alt='Anomalies Zoomed'>
-* it looks like Morsecode
+* it looks like morse code
 
 ---
 <br />
 
 ## Cyberchef
 
-Open Cyberchef in your browser:
+Open Cyberchef in your preferred browser:
 ```https
 https://cyberchef.org/
 ```
 
 Setting up Cyberchef:
 <img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918192632.png' alt='Setting up Cyberchef'>
-+ Type `morse` in the search field and move `To Morse Code` per drag and drop to the Recipe field on the right side
+* type `morse` in the search box and drag and drop `To Morse Code` into the `Recipe` box on the right.
 
 Solve the challenge:
 <img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918192109.png' alt='Solve the challenge1'>
 <img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918193136.png' alt='Solve the challenge2'>
-Legende: short = `.`, long = `-`
+Legend: short = `.`, long = `-`
 
-* Solve the Challenge by following the sort an long periods in the green Spectrogram and type it in the Cyberchef input field with the `short` and `long` 
+* solve the challenge by following the short and long time periods in the green `spectrogram` and entering them in the `cyberchef` input field with `short` and `long` 
 
-+ After you have it right, you solved the challenge Congrats.
+* if you did it right, you solved the challenge Congratulations.
 
 ---
 <br />
 
 ## The Flag
 
-Don't forgot the hint from the instructions
+Don't forget the hint in the instructions:
 ```txt
 **Hinweis:** Flag entspricht nicht dem klassischen DBH{}-Format
 ```
