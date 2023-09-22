@@ -17,7 +17,7 @@ wo mir der Kern des Liedes neue Horizonte eröffnet.
 Dateien: ca8f82c65b9cb300ee7aa575dc4c9c9244076208e 756864ae3c971f3b2c3a92d combined.wav
 ```
 
-* Download the file `combined.wav`
+* download the file `combined.wav`
 ---
 <br />
 
@@ -38,9 +38,9 @@ Open the file `combined.wav` in `Sonic Visualizer` with the following command:
 sonic-visualiser combined.wav 
 ```
 
-* If you listen to the audio you will not hear any anomalies. 
+* if you listen to the audio you will not hear any anomalies. 
 
-* At first look you will not see anything interesting
+* at first look you will not see anything interesting
 
 <br />
 
