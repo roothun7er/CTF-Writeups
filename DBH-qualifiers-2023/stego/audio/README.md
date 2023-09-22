@@ -72,6 +72,8 @@ Setting up Cyberchef:
 <img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918192632.png' alt='Setting up Cyberchef'>
 * type `morse` in the search box and drag and drop `To Morse Code` into the `Recipe` box on the right.
 
+<br />
+
 Solve the challenge:
 <img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918192109.png' alt='Solve the challenge1'>
 <img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/audio/img/Pasted image 20230918193136.png' alt='Solve the challenge2'>
