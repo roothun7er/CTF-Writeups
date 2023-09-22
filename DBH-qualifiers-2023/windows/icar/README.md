@@ -64,12 +64,12 @@ cd $env:USERPROFILE\Downloads
 ```
 <br />
 
-Open the "icar.exe" file in Powershell with the following command:
+Open the `icar.exe` file in `Powershell` with the following command:
 ```powershell
 .\icar.exe
 ```
 
-After starting "iCar.exe" you will see the following:
+After starting `iCar.exe` you will see the following:
 <img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/windows/icar/img/iCar_Start.png' alt='iCar_Start'>
 
 * after launching the `iCar.exe` program we see in the text that the test virus `eicar.txt` must be located in the same directory.
