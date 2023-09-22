@@ -81,7 +81,8 @@ After starting `iCar.exe` you will see the following:
 * let's do this first
 <br />
 
-Set Computername whitch includes `DBHLabs` and restart the machine with the following command:
+
+Set a computer name that includes `DBHLabs` and restart the computer with the following command:
 ```powersell
 Rename-Computer -NewName "DBHLabs-1337" -Restart
 ```
