@@ -293,7 +293,7 @@ Theeeeeere weeeeee gooooooo we solved the Challenge:
 
 <br />
 
-Copy the flag and past it in a file with the following command:
+Copy the flag and `echo` it in a file `flag.txt` with the following command:
 ```bash
 echo "DBH{R4ns0mwar3_DEcrypt3d!}" > flag.txt
 ```
@@ -304,7 +304,7 @@ echo "DBH{R4ns0mwar3_DEcrypt3d!}" > flag.txt
 
 <br />
 
-Shows the input of the flag.txt:
+Shows the content of the file `flag.txt` with the following command:
 ```bash
 cat flag.txt
 ```

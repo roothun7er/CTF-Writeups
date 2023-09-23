@@ -152,7 +152,7 @@ After the programstart you should see an text like in the following picture:
 <br />
 
 
-Copy the flag and past it in a file with the following command:
+Copy the flag and `echo` it in a file `flag.txt` with the following command:
 ```bash
 echo "DBH{e1c4r_t3sTf1l3_i5t_l3g3nDe}" > flag.txt
 ```
@@ -163,7 +163,7 @@ echo "DBH{e1c4r_t3sTf1l3_i5t_l3g3nDe}" > flag.txt
 
 <br />
 
-Shows the input of the flag.txt:
+Shows the content of the file `flag.txt` with the following command:
 ```bash
 cat flag.txt
 ```
