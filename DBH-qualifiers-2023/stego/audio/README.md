@@ -14,7 +14,8 @@ wo mir der Kern des Liedes neue Horizonte eröffnet.
 
 **Hinweis:** Flag entspricht nicht dem klassischen DBH{}-Format
 
-Dateien: ca8f82c65b9cb300ee7aa575dc4c9c9244076208e 756864ae3c971f3b2c3a92d combined.wav
+Datei: combined.wav
+SHA256 checksum: ca8f82c65b9cb300ee7aa575dc4c9c9244076208e756864ae3c971f3b2c3a92d
 ```
 
 * download the file `combined.wav`
@@ -83,17 +84,29 @@ Legend: short = `.`, long = `-`
 
 * if you did it right, you solved the challenge Congratulations.
 
----
 <br />
-
-## The Flag
 
 Don't forget the hint in the instructions:
 ```txt
 **Hinweis:** Flag entspricht nicht dem klassischen DBH{}-Format
 ```
 
-The flag:
+Copy the flag and past it in a file with the following command:
+```bash
+echo "DBH{DBH-LIEBE-AUDIOS!}" > flag.txt
+```
+---
+<br />
+
+## Watch the flag
+
+<br />
+
+Shows the input of the flag.txt:
+```bash
+cat flag.txt
+```
+Output:
 ```txt
 DBH{DBH-LIEBE-AUDIOS!}
 ```

@@ -14,8 +14,11 @@ Zum Glück wurde die in Python entwickelte Ransomware ransomware.py nicht versch
 sodass sich die Techniker der Developer Akademie an der Programmierung eines geeigneten Decryptors versuchen können.
 Kannst du ihnen bei der Entwicklung des Decryptors helfen?
 
-ransomware.py 8b3b5dcb2f4e4ab83600f8d27ad907e3cdc53246c589dfa197c587f80e73fc9f
-flag.png.encrypted 5dbab4261f97694fb6d3a018a7ef4383712b614484965cfd58f247fe33b5433e
+Datei: ransomware.py
+SHA256 checksum: 8b3b5dcb2f4e4ab83600f8d27ad907e3cdc53246c589dfa197c587f80e73fc9f
+
+Datei: flag.png.encrypted
+SHA256 checksum: 5dbab4261f97694fb6d3a018a7ef4383712b614484965cfd58f247fe33b5433e
 ```
 
 
@@ -288,11 +291,25 @@ if __name__ == "__main__":
 Theeeeeere weeeeee gooooooo we solved the Challenge:
 <img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/stego/ransomware/img/Pasted image 20230919004211.png' alt='Flag Image'>
 
+<br />
+
+Copy the flag and past it in a file with the following command:
+```bash
+echo "DBH{R4ns0mwar3_DEcrypt3d!}" > flag.txt
+```
 ---
 <br />
 
-## The flag
+## Watch the flag
 
+<br />
+
+Shows the input of the flag.txt:
+```bash
+cat flag.txt
+```
+Output:
 ```txt
 DBH{R4ns0mwar3_DEcrypt3d!}
 ```
+---

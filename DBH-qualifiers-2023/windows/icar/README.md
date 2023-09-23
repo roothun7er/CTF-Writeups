@@ -16,7 +16,8 @@ ob die Beta-Version auf einem Computer der DBHLabs läuft.
 Die Beta-Version kann von anderen Anti-Virus-Lösungen als Virus eingestuft werden, 
 ist jedoch absolut ungefährlich.
 
-Dateien: 52b6ab638a80326ef64504506fa51f868a14 9bff1bc01a0b4fdfd7039caa281b iCar.exe
+Dateien: iCar.exe
+SHA256 checksum: 52b6ab638a80326ef64504506fa51f868a149bff1bc01a0b4fdfd7039caa281b
 ```
 
 
@@ -26,14 +27,18 @@ Dateien: 52b6ab638a80326ef64504506fa51f868a14 9bff1bc01a0b4fdfd7039caa281b iCar.
 ## Setup Windows 10/11 requirements
 
 
-Before we get started, there are a few things we need to do.
+Since `iCar.exe` is not a malicious file, but it is detected as such by Windows Defender, 
+we need to work around this by changing a few things:
 
-* start a Windows 10/11 virtual machine in your preffered virtualization tool.
+* first of all start a Windows 10/11 virtual machine in your preffered virtualization tool.
 
 * open `powershell` as `administrator`
 
+* we must add some exception rules to Windows Defender
 
-Add `icar.exe` and `eicar.txt` as an exception rule to Windows Defender:
+<br />
+
+Add `icar.exe` and `eicar.txt` as an exception rule to Windows Defender with the following commands:
 ```powershell
 Add-MpPreference -ExclusionPath "$env:USERPROFILE\Downloads\iCar.exe"
 Add-MpPreference -ExclusionPath "$env:USERPROFILE\Downloads\eicar.txt"
@@ -64,10 +69,12 @@ cd $env:USERPROFILE\Downloads
 ```
 <br />
 
-Open the `icar.exe` file in `Powershell` with the following command:
+Open the `icar.exe` file in `powershell` with the following command:
 ```powershell
 .\icar.exe
 ```
+
+<br />
 
 After starting `iCar.exe` you will see the following:
 <img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/windows/icar/img/iCar_Start.png' alt='iCar_Start'>
@@ -119,7 +126,7 @@ New-Item -ItemType File -Path "$env:USERPROFILE\Downloads\eicar.txt" -Value "X5O
 
 ## Solve the challenge
 
-* open `Powershell` as `Administrator`
+* open `powershell` as `administrator`
 
 Navigate to your `Downloads` folder with the following command:
 ```powershell
@@ -139,16 +146,30 @@ Open the file `icar.exe` in powershell with the following command:
 After the programstart you should see an text like in the following picture:
 <img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/windows/icar/img/iCar_solve.png' alt='iCar_solve'>
 
+
 * if you did it right, you solved the challenge Congratulations.
 
+<br />
+
+
+Copy the flag and past it in a file with the following command:
+```bash
+echo "DBH{e1c4r_t3sTf1l3_i5t_l3g3nDe}" > flag.txt
+```
 ---
 <br />
 
-## The Flag
+## Watch the flag
 
+<br />
 
-The flag:
+Shows the input of the flag.txt:
+```bash
+cat flag.txt
+```
+Output:
 ```txt
 DBH{e1c4r_t3sTf1l3_i5t_l3g3nDe}
 ```
 ---
+
