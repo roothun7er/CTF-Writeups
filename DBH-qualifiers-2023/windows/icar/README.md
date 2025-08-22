@@ -1,7 +1,7 @@
 #DBH #deutschlandsbesterhacker #challanges #cybersecurity 
 
 ---
-> hun7er Cybersecurity | Sep 23th, 2023
+> roothun7er | Sep 23th, 2023
 ---
 <br />
 
@@ -77,7 +77,7 @@ Open the `icar.exe` file in `powershell` with the following command:
 <br />
 
 After starting `iCar.exe` you will see the following:
-<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/windows/icar/img/iCar_Start.png' alt='iCar_Start'>
+<img src='https://github.com/roothun7er/CTF-Writeups/blob/main/DBH-qualifiers-2023/windows/icar/img/iCar_Start.png' alt='iCar_Start'>
 
 * after launching the `iCar.exe` program we see in the text that the test virus `eicar.txt` must be located in the same directory.
 
@@ -144,7 +144,7 @@ Open the file `icar.exe` in powershell with the following command:
 ```
 
 After the programstart you should see an text like in the following picture:
-<img src='https://github.com/hun7erCybersecurity/CTF-Writeups/blob/main/DBH-qualifiers-2023/windows/icar/img/iCar_solve.png' alt='iCar_solve'>
+<img src='https://github.com/roothun7er/CTF-Writeups/blob/main/DBH-qualifiers-2023/windows/icar/img/iCar_solve.png' alt='iCar_solve'>
 
 
 * if you did it right, you solved the challenge Congratulations.
