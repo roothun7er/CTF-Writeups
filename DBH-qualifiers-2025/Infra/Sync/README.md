@@ -369,7 +369,7 @@ Here are some Mitigation techniques we can do to solve future problems.
    - Monitor for unauthorized files in `/etc/cron.d`.
 
 3. **Infrastructure**:
-   - Firewall to restrict port 30199 to trusted IPs.
+   - Firewall to restrict port <YOUR_GIVEN_PORT> to trusted IPs.
    - Regularly scan for open ports/services.
 ---
 
@@ -380,3 +380,4 @@ Even if fixed, an administrator may require write-access for legitimate purposes
 The interplay between multiple services (e.g., rsync + cron) creates composite vulnerabilities — removing one component may not remove the entire attack surface.
 
 ---
+
