@@ -22,7 +22,7 @@ Here you will see a summary of the following topics of the report.
 	* Summary
 * **Challenge start**
 	* On your Machine
-	* Let's geht started
+	* Let's get started
 * **Recon phase**
 	* Looking around
 * **The Challenge Code**
@@ -118,7 +118,7 @@ Output:
 - After i saw this output i knew that tool is `rsync`, a very nice tool: `BTW an pre build tool in KALI`, so in know it very well.
 ---
 
-### Let's geht started
+### Let's get started
 
 First of all we try to reach the given `DOMAIN + PORT` directly in `rsync` and saw whats happend with the following Command:
 ```bash
@@ -380,4 +380,5 @@ Even if fixed, an administrator may require write-access for legitimate purposes
 The interplay between multiple services (e.g., rsync + cron) creates composite vulnerabilities — removing one component may not remove the entire attack surface.
 
 ---
+
 
